@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operacion Nexo 5G/6G - Anexo de calculos</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f8f5ef; color: #1f242c; }
+    main { max-width: 1100px; margin: 32px auto; background: white; padding: 36px 42px; border-radius: 16px; box-shadow: 0 12px 34px rgba(0,0,0,0.08); }
+    h1, h2, h3 { color: #1a1f26; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem 0; font-size: 0.94rem; }
+    th, td { border: 1px solid #ddd5ca; padding: 0.55rem 0.6rem; text-align: left; vertical-align: top; }
+    th { background: #f5eee4; color: #c85f3f; text-transform: uppercase; font-size: 0.78rem; }
+    code { background: #f4ede4; padding: 0.12rem 0.28rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main><h1>Operacion Nexo 5G/6G - Anexo de calculos</h1>
+<h2>Escenario A - Distrito financiero</h2>
+<ol>
+<li>Ruido termico: <code>N = -93.990 dBm</code>.</li>
+<li>Sensibilidad: <code>Sens = -76.990 dBm</code>.</li>
+<li>Perdida maxima: <code>Lmax = 125.990 dB</code>.</li>
+<li>Radio por cobertura: <code>Rcov = 0.553 km</code>.</li>
+<li>Trafico por usuario: <code>Auser = 0.100 Erl</code>.</li>
+<li>Densidad de trafico: <code>Akm2 = 250.000 Erl/km2</code>.</li>
+<li>Recomendacion final: <code>N = 4</code> con <code>Rdesign = 0.129 km</code>.</li>
+</ol>
+<h2>Escenario B - Festival global</h2>
+<ol>
+<li>Ruido termico: <code>N = -93.990 dBm</code>.</li>
+<li>Sensibilidad: <code>Sens = -86.990 dBm</code>.</li>
+<li>Perdida maxima: <code>Lmax = 135.990 dB</code>.</li>
+<li>Radio por cobertura: <code>Rcov = 3.412 km</code>.</li>
+<li>Radio por capacidad: <code>Rcap = 0.225 km</code>.</li>
+<li>Etapa de splitting recomendada: <code>S4</code> con <code>R = 0.213 km</code>.</li>
+</ol>
+<h2>Supuestos aplicados</h2>
+<table>
+<thead>
+<tr>
+<th>assumption</th>
+<th>applied_value</th>
+<th>justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reference target area</td>
+<td>1 km2 for both scenarios</td>
+<td>The statement asks for the number of cells over a proposed target area but does not provide a fixed value. A common normalized 1 km2 area is assumed to compare cell density without bias.</td>
+</tr>
+<tr>
+<td>Channel partition in scenario A</td>
+<td>floor(100 / N) channels per site, then uniform split across 3 sectors</td>
+<td>The statement requests N = 3, 4, 7 and three sectors per site, but it does not define a more detailed PRB scheduler. The uniform split is the simplest reproducible assumption.</td>
+</tr>
+<tr>
+<td>Interference approximation</td>
+<td>2 first-tier interferers for sectorized cells and 6 for omnidirectional reference</td>
+<td>This is the standard first-tier hexagonal approximation used to compare reuse strategies in teaching-oriented planning exercises.</td>
+</tr>
+<tr>
+<td>Hexagonal geometry</td>
+<td>Regular hexagonal cell area model</td>
+<td>Needed to convert traffic-limited area into an equivalent cell radius and then into the number of required sites.</td>
+</tr>
+<tr>
+<td>Modern radio context</td>
+<td>OFDMA/LTE/5G design logic with adaptive MCS</td>
+<td>The statement explicitly asks for a modern mobile-network framing even though the numerical exercise is simplified to link budget and Erlang B.</td>
+</tr>
+</tbody>
+</table></main>
+</body>
+</html>

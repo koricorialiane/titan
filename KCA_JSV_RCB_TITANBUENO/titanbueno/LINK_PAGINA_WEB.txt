@@ -1,0 +1,16 @@
+Paquete:
+RETOTITAN_KCA_JSV_RCB
+
+Pagina web principal:
+index.html
+
+Para abrirla en Google Chrome:
+1. Descomprime el paquete.
+2. Haz doble clic en index.html o abre el archivo con Google Chrome.
+3. Si quieres apertura directa, ejecuta ABRIR_EN_GOOGLE_CHROME.bat.
+
+Si la publicas en GitHub Pages desde la raiz del proyecto, el enlace tendra este formato:
+https://TU_USUARIO.github.io/TU_REPOSITORIO/
+
+Enlace local del archivo principal una vez descomprimido:
+file:///.../RETOTITAN_KCA_JSV_RCB/index.html

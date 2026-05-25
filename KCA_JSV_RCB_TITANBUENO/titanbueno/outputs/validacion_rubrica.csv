@@ -1,0 +1,7 @@
+rubric_area,project_evidence,why_it_matters
+Structure and presentation,"Static web includes summary, scenarios, assumptions and code section",Supports rubric presentation block
+State of the art,Project exports a modulation context table and OFDMA framing,Connects calculations with modern mobile systems
+Methodology,"Main pipeline reproduces noise, sensitivity, coverage, capacity, reuse and splitting",Step-by-step reproducibility is explicit
+Mathematical precision,"Outputs keep units, formulas and CSV traces",Facilitates annex verification
+Discussion,Root web explains limiting factors and design trade-offs,Moves beyond raw numbers
+Conclusions and future view,Report builder includes recommendations and 2030 extension note,Aligns with final rubric block

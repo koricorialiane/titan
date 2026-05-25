@@ -1,0 +1,5 @@
+modulation,design_tradeoff,typical_use,interpretation
+QPSK,High robustness,Cell edge and difficult propagation,"Lower spectral efficiency, lower SNR need"
+16QAM,Balanced,Typical urban load,Intermediate throughput and robustness
+64QAM,High throughput,Good SINR zones,Higher spectral efficiency at higher SNR
+256QAM,Peak efficiency,Excellent channel quality,Representative of modern LTE/5G adaptation logic

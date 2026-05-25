@@ -1,0 +1,11 @@
+parameter,value,engineering_role
+Operating frequency,1800 MHz,Shared by both scenarios
+System bandwidth,20 MHz,Used for thermal noise
+Base station transmit power,43 dBm,Equivalent to 20 W
+TX antenna gain,18 dBi,Base station sector antenna
+RX antenna gain,0 dBi,Mobile terminal
+Additional losses,12 dB,"Cables, connectors and design margin"
+Receiver noise figure,7 dB,NF for sensitivity estimate
+Implementation losses,2 dB,L_impl term in sensitivity
+Blocking probability,2.00%,GoS objective for Erlang B
+Total physical channels,100,Simplified PRB-like capacity pool

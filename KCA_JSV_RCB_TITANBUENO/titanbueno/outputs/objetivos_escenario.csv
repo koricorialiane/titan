@@ -1,0 +1,3 @@
+scenario,environment,density,design_priority,required_analysis
+A_distrito_financiero,Dense urban core,2500 active users/km2,Coverage plus strong capacity pressure,"Three sectors per site and N = 3, 4, 7 comparison"
+B_festival_global,Open suburban esplanade,8000 active users/km2,Extreme temporal congestion,Omnidirectional cells plus cell splitting evaluation
